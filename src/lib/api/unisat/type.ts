@@ -1,0 +1,30 @@
+export type RunesInfoListResponse = {
+  runeid: string;
+  rune: string;
+  spacedRune: string;
+  number: number;
+  height: number;
+  txidx: number;
+  timestamp: number;
+  divisibility: number;
+  symbol: string;
+  etching: string;
+  premine: string;
+  terms?: {
+    amount: string;
+    cap: string;
+    heightStart: null | number;
+    heightEnd: null | number;
+    offsetStart: null | number;
+    offsetEnd: null | number;
+  };
+  mints: string;
+  burned: string;
+  holders: number;
+  transactions: number;
+  supply: string;
+  start: null | number;
+  end: null | number;
+  mintable: boolean;
+  remaining: string;
+};
